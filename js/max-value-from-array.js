@@ -2,7 +2,7 @@
 let array;
 let maxNumber;
 function findMaxValue(array) {
-  console.log('DO .. WHILE loop');
+  console.log('DO .. WHILE loop\n');
   maxNumber = 0;
   let i = 0;
   do {
@@ -10,7 +10,7 @@ function findMaxValue(array) {
     console.log(`At ${i + 1} iteration biggest element found = ${maxNumber}`);
     i++;
   } while (i < array.length);
-  console.log(`The biggest element of given array = ${maxNumber}`);
+  console.log(`\nThe biggest element of given array = ${maxNumber}\n\n`);
   return maxNumber;
 }
 
@@ -24,13 +24,13 @@ findMaxValue(array);
 // FOR LOOP
 
 function findMaxValue_2(array) {
-  console.log('FOR loop');
+  console.log('FOR loop\n');
   maxNumber = 0;
   for (let i = 0; i < array.length; i++) {
     maxNumber = maxNumber < array[i] ? array[i] : maxNumber;
     console.log(`At ${i + 1} iteration biggest element found = ${maxNumber}`);
   }
-  console.log(`The biggest element of given array = ${maxNumber}`);
+  console.log(`\nThe biggest element of given array = ${maxNumber}\n\n`);
   return maxNumber;
 }
 
