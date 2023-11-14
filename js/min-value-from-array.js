@@ -3,6 +3,7 @@ let array;
 let minNumber;
 function findMinValue(array) {
   console.log('DO .. WHILE loop\n');
+  console.log('Array =', array, '\n');
   minNumber = 0;
   let i = 0;
   for (let i = 0; i < array.length; i++) {
@@ -19,7 +20,7 @@ function findMinValue(array) {
 
 array = [1, -2, 3, -4, 5, -6];
 findMinValue(array);
-array = [1666, 112, 345, 11, 56598, 56599, 56600];
+array = [1666, 112, 345, 11, 565, 56599, 0.7];
 findMinValue(array);
 array = [6, 5, 4, 3, 2, 1, 7];
 findMinValue(array);
@@ -32,6 +33,7 @@ findMinValue(array);
 
 function findMinValue_2(array) {
   console.log('FOR loop\n');
+  console.log('Array =', array, '\n');
   minNumber = 0;
   for (let i = 0; i < array.length; i++) {
     minNumber += array[i] ** 2;
