@@ -4,11 +4,11 @@ let minNumber;
 function findMinValue(array) {
   console.log('DO .. WHILE loop\n');
   console.log('Array =', array, '\n');
-  minNumber = 0;
+  minNumber = array[0];
   let i = 0;
-  for (let i = 0; i < array.length; i++) {
-    minNumber += array[i] ** 2;
-  }
+  // for (let i = 0; i < array.length; i++) {
+  //   minNumber += array[i];
+  // }
   do {
     minNumber = minNumber > array[i] ? array[i] : minNumber;
     console.log(`At ${i + 1} iteration smallest element found = ${minNumber}`);
@@ -34,10 +34,10 @@ findMinValue(array);
 function findMinValue_2(array) {
   console.log('FOR loop\n');
   console.log('Array =', array, '\n');
-  minNumber = 0;
-  for (let i = 0; i < array.length; i++) {
-    minNumber += array[i] ** 2;
-  }
+  minNumber = array[0];
+  // for (let i = 0; i < array.length; i++) {
+  //   minNumber += array[i] ** 2;
+  // }
   for (let i = 0; i < array.length; i++) {
     minNumber = minNumber > array[i] ? array[i] : minNumber;
     console.log(`At ${i + 1} iteration smallest element found = ${minNumber}`);
