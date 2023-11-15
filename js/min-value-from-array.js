@@ -56,3 +56,5 @@ array = [69, -53, 58, 51, -62, 61, -70];
 findMinValue_2(array);
 array = [69, -53, 58, 51, 0, -56, -70];
 findMinValue_2(array);
+
+console.log(Math.min(...array)); // *crying*

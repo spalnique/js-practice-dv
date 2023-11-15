@@ -42,3 +42,5 @@ array = [1666, 112, 345, 1, 56598, 56599, 56600];
 findMaxValue_2(array);
 array = [69, 53, 58, 51, 62, 61, 70];
 findMaxValue_2(array);
+
+console.log(Math.max(...array)); // *crying*
