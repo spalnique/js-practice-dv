@@ -17,6 +17,7 @@ function sortString(str) {
 }
 
 console.log(sortString(str));
+alert(sortString(str));
 
 // console.log(`Result = ${sortString('edcba')}`);
 // console.log(`Result = ${sortString('ertyuiopkjhgfcvbnm')}`);
