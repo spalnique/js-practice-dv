@@ -13,9 +13,10 @@ function sortString(str) {
       }
     }
   }
-  console.log(str.join(''));
   return (str = str.join(''));
 }
+
+console.log(sortString(str));
 
 // console.log(`Result = ${sortString('edcba')}`);
 // console.log(`Result = ${sortString('ertyuiopkjhgfcvbnm')}`);
