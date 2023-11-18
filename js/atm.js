@@ -24,13 +24,14 @@ function cashWithdrawal(requestedAmount) {
     do {
       requestedArray.push(valueTwenty);
       requestedAmount -= valueTwenty;
+      twentiesArray = twentiesArray.slice(0, twentiesArray.length - 1);
     } while (requestedAmount % valueFifty > 0);
-    console.log(requestedArray);
     do {
       requestedArray.push(valueFifty);
       requestedAmount -= valueFifty;
     } while (requestedAmount > 0);
   }
+  console.log('Banknotes withdrawn = ', requestedArray);
   return requestedArray;
 }
 
